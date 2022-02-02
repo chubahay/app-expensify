@@ -6,7 +6,8 @@
   "scripts": {
     "serve": "live-server public/",
     "build": "webpack",
-    "dev-server": "webpack serve"
+    "dev-server": "webpack serve",
+    "test": "jest"
   },
   "author": "Charlie Rogers",
   "license": "ISC",
@@ -16,15 +17,16 @@
     "@babel/preset-react": "^7.13.13",
     "babel-loader": "^8.0.5",
     "css-loader": "^0.28.4",
+    "jest": "latest",
     "live-server": "^1.2.1",
     "moment": "^2.18.1",
     "node-sass": "^5.0.0",
     "normalize.css": "^7.0.0",
-    "react": "^16.0.0",
+    "react": "^16.14.0",
     "react-addons-shallow-compare": "^15.6.0",
     "react-dates": "^12.7.0",
     "react-dom": "^16.0.0",
-    "react-modal": "^2.2.2",
+    "react-modal": "^2.4.1",
     "react-redux": "^5.1.2",
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
