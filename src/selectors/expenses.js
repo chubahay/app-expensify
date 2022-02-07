@@ -1,5 +1,6 @@
 import moment from 'moment'
 
+
 export default (expenses, { text, sortBy, startDate, endDate }) => {
     return expenses.filter((expense) => {
         const createdAtMoment = moment(expense.createdAt)
@@ -17,3 +18,4 @@ export default (expenses, { text, sortBy, startDate, endDate }) => {
             return a.amount < b.amount ? 1 : -1;
     })
 };
+
