@@ -12,3 +12,4 @@ test('Should render the ExpenseList component without expenses', () => {
     const wrapper = shallow(<ExpenseList expenses={[]}/>)
     expect(wrapper).toMatchSnapshot();
 })
+
