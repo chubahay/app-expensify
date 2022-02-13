@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "serve": "live-server public/",
-    "build": "webpack",
+    "build:dev": "webpack --mode development",
+    "build:prod": "webpack --mode production",
     "dev-server": "webpack serve",
     "test": "jest --config=jest.config.json --watch"
   },
@@ -22,6 +23,7 @@
     "enzyme-to-json": "^3.0.1",
     "jest": "latest",
     "live-server": "^1.2.1",
+    "mini-css-extract-plugin": "^2.5.3",
     "moment": "^2.18.1",
     "node-sass": "^5.0.0",
     "normalize.css": "^7.0.0",
