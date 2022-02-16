@@ -1,10 +1,4 @@
 
 export default (expenses) => {
-
-    const initialValue = 0
-
-    return expenses.map(({ amount }) => ({ amount })).reduce((previousValue, currentValue) => {
-        return previousValue + currentValue.amount
-    }, initialValue);
-
+    return expenses.map((expense) => expense.amount).reduce((previousValue, currentValue) => previousValue + currentValue, 0)
 };

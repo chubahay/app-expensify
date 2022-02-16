@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render the ExpenseSummary component correctly 1`] = `
+<div>
+  <p>
+     Total number of expenses: 
+  </p>
+  <p>
+     Total amount of expenses: 
+     
+  </p>
+</div>
+`;
+
+exports[`Should render the ExpenseSummary component correctly 2`] = `
+<div>
+  <p>
+     Total number of expenses: 
+  </p>
+  <p>
+     Total amount of expenses: 
+     
+  </p>
+</div>
+`;
+
+exports[`Should render the ExpenseSummary component correctly with no visible expenses 1`] = `
+<div>
+  <p>
+     Total number of expenses: 
+  </p>
+  <p>
+     Total amount of expenses: 
+     
+  </p>
+</div>
+`;
+
+exports[`Should render the header component correctly 1`] = `
+<header>
+  <h1>
+    Expensify
+  </h1>
+  <NavLink
+    activeClassName="is-active"
+    aria-current="page"
+    exact={true}
+    to="/"
+  >
+    Dashboard
+  </NavLink>
+  <NavLink
+    activeClassName="is-active"
+    aria-current="page"
+    to="/create"
+  >
+    Create Expense
+  </NavLink>
+  <NavLink
+    activeClassName="is-active"
+    aria-current="page"
+    to="/edit"
+  >
+    Edit Expense
+  </NavLink>
+  <NavLink
+    activeClassName="is-active"
+    aria-current="page"
+    to="/help"
+  >
+    Help
+  </NavLink>
+</header>
+`;
