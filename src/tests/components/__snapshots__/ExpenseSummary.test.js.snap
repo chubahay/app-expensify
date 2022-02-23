@@ -1,74 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Should render the ExpenseSummary component correctly 1`] = `
-<div>
-  <p>
-     Total number of expenses: 
-  </p>
-  <p>
-     Total amount of expenses: 
-     
-  </p>
-</div>
-`;
-
-exports[`Should render the ExpenseSummary component correctly 2`] = `
-<div>
-  <p>
-     Total number of expenses: 
-  </p>
-  <p>
-     Total amount of expenses: 
-     
-  </p>
-</div>
-`;
-
 exports[`Should render the ExpenseSummary component correctly with no visible expenses 1`] = `
 <div>
   <p>
      Total number of expenses: 
+    0
   </p>
   <p>
      Total amount of expenses: 
+    $0.00
      
   </p>
 </div>
 `;
 
-exports[`Should render the header component correctly 1`] = `
-<header>
-  <h1>
-    Expensify
-  </h1>
-  <NavLink
-    activeClassName="is-active"
-    aria-current="page"
-    exact={true}
-    to="/"
-  >
-    Dashboard
-  </NavLink>
-  <NavLink
-    activeClassName="is-active"
-    aria-current="page"
-    to="/create"
-  >
-    Create Expense
-  </NavLink>
-  <NavLink
-    activeClassName="is-active"
-    aria-current="page"
-    to="/edit"
-  >
-    Edit Expense
-  </NavLink>
-  <NavLink
-    activeClassName="is-active"
-    aria-current="page"
-    to="/help"
-  >
-    Help
-  </NavLink>
-</header>
+exports[`Should render the correct total number of expenses and total amount of expenses with one visible expense 1`] = `
+<div>
+  <p>
+     Total number of expenses: 
+    1
+  </p>
+  <p>
+     Total amount of expenses: 
+    $2.00
+     
+  </p>
+</div>
+`;
+
+exports[`Should render the correct total number of expenses and total amount of expenses with two visible expenses 1`] = `
+<div>
+  <p>
+     Total number of expenses: 
+    2
+  </p>
+  <p>
+     Total amount of expenses: 
+    $4,000.59
+     
+  </p>
+</div>
 `;
