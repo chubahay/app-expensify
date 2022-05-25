@@ -1,7 +1,8 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
+import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
 import { getAnalytics } from "firebase/analytics";
-import { getDatabase, ref, set, remove, update, onValue, push, onChildChanged, onChildRemoved } from 'firebase/database';
+import { getDatabase, ref, set, remove, update, onValue, push, onChildChanged, onChildRemoved, get } from 'firebase/database';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -20,13 +21,14 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
 //const analytics = getAnalytics(app);
 
-export const db = getDatabase()
+const db = getDatabase()
+const provider = new GoogleAuthProvider();
+const auth = getAuth()
 
-
-
-
+export { db, auth, provider }
 
 
 
