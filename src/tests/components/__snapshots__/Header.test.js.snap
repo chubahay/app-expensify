@@ -8,7 +8,6 @@ exports[`Should render the header component correctly 1`] = `
   <NavLink
     activeClassName="is-active"
     aria-current="page"
-    exact={true}
     to="/dashboard"
   >
     Dashboard
