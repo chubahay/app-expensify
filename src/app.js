@@ -34,7 +34,6 @@ const renderApp = () => {
 
 ReactDOM.render(<p>Loading....</p>, document.getElementById('app'));
 
-console.log(history)
 Auth.onAuthStateChanged((user) => {
     if (user) {
         store.dispatch(login(user.uid))
